@@ -128,18 +128,17 @@ function Particle(x,y,m,n){
     }
   }
   this.display = function(x) {
-    this.r = Math.abs(this.r);
     strokeWeight(2);
     var n = map(noise(x+this.no/5), 0, 1, -0.5, 0.5);
     var m = 0.33 * (sin(frameCount/20) * 0.3 + n / 6);
     // print(amplitude.getLevel());
-    if(amplitude.getLevel()<0.01){
+    if(amplitude.getLevel()<0.01||state!=-1){
       m = 0.5;
     }
-    else if(amplitude.getLevel() > 0.2){
+    else if(amplitude.getLevel() > 0.2&&this.r>5){
       m = -0.8;
     }
-    if(state == 2 || touches.length>2){
+    if(state == 2 || touches.length>2&&this.r>5){
       m = -0.5
     }
     this.r += m;

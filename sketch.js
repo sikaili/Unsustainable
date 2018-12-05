@@ -6,7 +6,7 @@ document.addEventListener('touchmove', function(n) {
 }, {passive: false });
 let Amp = false;
 let count =0;
-let state = 0;
+let state = -1;
 let m = [], particles=[];
 let t1,t2,ts=[];
 let t3;
