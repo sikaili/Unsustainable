@@ -27,7 +27,6 @@ let notes = [48, 50, 52, 55, 57, 60, 62, 64, 67, 69, 72];
 let link,link1;
 let texts = ["Frenetically","Frantically","Unquietly","Unsubtly","Energetically","Deservedly","Unreservedly","Saucily","Soporifically","Resignedly","Unaccountably","Unsustainable"];
 let verbs = ["Consume","Burn","Shine","Mediate","Converse","Expand","Subsume","Annex","Exhaust","Demonstrate","Install","Grow","Incinerate","Extirpate"];
-
 // let link,link1;
 "major pentonic"
 // let notes = [48, 51, 55, 54, 59, 60, 63, 64, 67, 68, 72];
