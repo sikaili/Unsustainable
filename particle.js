@@ -132,7 +132,7 @@ function Particle(x,y,m,n){
     var n = map(noise(x+this.no/5), 0, 1, -0.5, 0.5);
     var m = 0.33 * (sin(frameCount/20) * 0.3 + n / 6);
     // print(amplitude.getLevel());
-    if(amplitude.getLevel()<0.01||state!=-1){
+    if(amplitude.getLevel()<0.01&&state!=-1){
       m = 0.5;
     }
     else if(amplitude.getLevel() > 0.2&&this.r>5){
