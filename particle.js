@@ -128,6 +128,7 @@ function Particle(x,y,m,n){
     }
   }
   this.display = function(x) {
+    this.r = Math.abs(this.r);
     strokeWeight(2);
     var n = map(noise(x+this.no/5), 0, 1, -0.5, 0.5);
     var m = 0.33 * (sin(frameCount/20) * 0.3 + n / 6);
