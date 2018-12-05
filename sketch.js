@@ -71,11 +71,11 @@ function setup() {
   CreateOsc();
   background(150);
   link = createA("http://skyl.fr","http://skyl.fr");
-  link.style("color:#888884;font-family:HelveticaNeue-light,Helvetica;font-size:20px;")
-  link1 = createP("Sikai LI 2017","skyl@me.com");
-  link1.style("color:#888884;font-family:Helvetica;font-size:17px;")
-  link1.position(0.92 * windowWidth - 60, 0.9 * windowHeight+17)
-  link.position(0.92 * windowWidth - 60, 0.9 * windowHeight)
+  link.style("color:#FF69B4;font-family:HelveticaNeue-light,Helvetica;font-size:30px;")
+  link1 = createP("LI Sikai 2018","2018");
+  link1.style("color:#FF69B4;font-family:Helvetica;font-size:25px;")
+  link1.position(0.9 * windowWidth - 90, 0.9 * windowHeight+22)
+  link.position(0.9 * windowWidth - 90, 0.9 * windowHeight);
 }
 
 function shuffleArray(array) {
