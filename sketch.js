@@ -59,7 +59,7 @@ function MouseP() {
 }
 
 function setup() {
-  pixelDensity() > 2 ? pixelDensity(2) : "";
+  pixelDensity() > 2.0 ? pixelDensity(2.0) : "";
   shuffleArray(texts);
   shuffleArray(verbs);
   randomSeed(0);
