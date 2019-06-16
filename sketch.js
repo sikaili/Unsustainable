@@ -196,6 +196,8 @@ function touchStarted(){
   t1 = millis();
   setTimeout(function(){show = false;},3000);
   state = 0;
+  getAudioContext().state == "running" ? '' : getAudioContext().resume();
+
 }
 function touchEnded(){
   state = 1;
