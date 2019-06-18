@@ -8,6 +8,8 @@ document.addEventListener('touchmove', function (n) {
 }, {
   passive: false
 });
+p5.disableFriendlyErrors = true;
+
 let Amp = false;
 let count = 0;
 let state = -1;
@@ -46,7 +48,6 @@ let yoff = 0,
   xoff = 0;
 let rec = true;
 let number;
-p5.disableFriendlyErrors = true;
 
 function MouseP() {
   if (rec) {
@@ -180,14 +181,6 @@ function draw() {
       particles[n].steering(createVector(mouseX, mouseY), 1, dis);
     }
     particles[n].separation(particles);
-
-    // if(n==3){
-    //   particles[n].applyForce(createVector(-10,10));
-    // }
-    // if(n==4){
-    //   particles[n].applyForce(createVector(-3,-1.5));
-    //   osc[n].disconnect();
-    // }
     particles[n].fluide(0.08);
     particles[n].bord();
     particles[n].update();
