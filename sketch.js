@@ -78,12 +78,12 @@ function setup() {
   masss.sort();
   CreateOsc();
   background(150);
-  link = createA("http://skyl.fr", "http://skyl.fr");
-  link.style("color:#FF69B4;font-family:HelveticaNeue-light,Helvetica;font-size:30px;")
-  link1 = createP("LI Sikai 2018", "2018");
-  link1.style("color:#FF69B4;font-family:Helvetica;font-size:25px;")
-  link1.position(0.9 * windowWidth - 90, 0.9 * windowHeight + 22)
-  link.position(0.9 * windowWidth - 90, 0.9 * windowHeight);
+//   link = createA("http://skyl.fr", "http://skyl.fr");
+//   link.style("color:#FF69B4;font-family:HelveticaNeue-light,Helvetica;font-size:30px;")
+//   link1 = createP("LI Sikai 2018", "2018");
+//   link1.style("color:#FF69B4;font-family:Helvetica;font-size:25px;")
+//   link1.position(0.9 * windowWidth - 90, 0.9 * windowHeight + 22)
+//   link.position(0.9 * windowWidth - 90, 0.9 * windowHeight);
 }
 
 function shuffleArray(array) {
@@ -110,8 +110,8 @@ function CreateOsc() {
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
-  link1.position(0.92 * windowWidth - 60, 0.9 * windowHeight + 17)
-  link.position(0.92 * windowWidth - 60, 0.9 * windowHeight)
+//   link1.position(0.92 * windowWidth - 60, 0.9 * windowHeight + 17)
+//   link.position(0.92 * windowWidth - 60, 0.9 * windowHeight)
 }
 
 function draw() {
